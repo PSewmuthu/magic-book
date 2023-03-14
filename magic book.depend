@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1678777202 source:d:\documents\software developments\projects\c\magic book\main.c
+	<stdio.h>
+	<stdlib.h>
+
