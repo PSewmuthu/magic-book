@@ -143,6 +143,23 @@ void result(sum){
 
 int main()
 {
-    printf("Hello world!\n");
+    show_menu();
+    char mind;
+    printf("Did you keep in mind an item? (t/f) ");
+    scanf("%c", &mind);
+
+    if mind == 't'{
+        int ans1, ans2, ans3, ans4;
+
+        ans1 = page1();
+        ans2 = page2();
+        ans3 = page3();
+        ans4 = page4();
+
+        result(ans1 + ans2 + ans3 + ans4);
+    }else{
+        printf("Magic book is closing...")
+    }
+
     return 0;
 }
