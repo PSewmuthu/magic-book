@@ -113,6 +113,34 @@ int page4(){
     return choice;
 }
 
+void result(sum){
+    printf("\n---------------------- Result ----------------------\n");
+
+    if sum == 1{
+        printf("\nYou have think,\n     Captain America          04\n\n");
+    } else if sum == 2{
+        printf("\nYou have think,\n     Hulk                     07\n\n");
+    } else if sum == 3{
+        printf("\nYou have think,\n     Doctor Strenge           08\n\n");
+    } else if sum == 4{
+        printf("\nYou have think,\n     Iron Man                 01\n\n");
+    } else if sum == 5{
+        printf("\nYou have think,\n     Thor                     10\n\n");
+    } else if sum == 6{
+        printf("\nYou have think,\n     Hawkeye                  05\n\n");
+    } else if sum == 7{
+        printf("\nYou have think,\n     Ant Man                  09\n\n");
+    } else if sum == 8{
+        printf("\nYou have think,\n     Captain Marvel           02\n\n");
+    } else if sum == 9{
+        printf("\nYou have think,\n     Black Widow              06\n\n");
+    } else{
+        printf("\nYou have think,\n     Spider Man               03\n\n");
+    }
+
+    printf("------------------------- End -------------------------\n\n");
+}
+
 int main()
 {
     printf("Hello world!\n");
