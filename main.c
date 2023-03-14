@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void show_menu(){
-    printf("----------------------- Menu -----------------------\n\n");
+    printf("\n----------------------- Menu -----------------------\n\n");
     printf("Iron Man                                         01\n");
     printf("Captain Marvel                                   02\n");
     printf("Spider Man                                       03\n");
@@ -25,14 +25,12 @@ int page1(){
 
     char ans;
     int choice;
-    printf("\nIs it here? (t/f) ");
-    scanf("%c", &ans);
-    printf("\n")
+    printf("\nIs it here? (y/n) ");
+    scanf(" %c", &ans);
 
-    switch (ans){
-    case 't':
+    if (ans == 'y'){
         choice = 1;
-    default:
+    }else{
         choice = 0;
     }
 
@@ -50,14 +48,13 @@ int page2(){
 
     char ans;
     int choice;
-    printf("\nIs it here? (t/f) ");
-    scanf("%c", &ans);
-    printf("\n")
+    printf("\nIs it here? (y/n) ");
+    scanf(" %c", &ans);
+    printf("\n");
 
-    switch (ans){
-    case 't':
+    if (ans == 'y'){
         choice = 2;
-    default:
+    }else{
         choice = 0;
     }
 
@@ -75,14 +72,13 @@ int page3(){
 
     char ans;
     int choice;
-    printf("\nIs it here? (t/f) ");
-    scanf("%c", &ans);
-    printf("\n")
+    printf("\nIs it here? (y/n) ");
+    scanf(" %c", &ans);
+    printf("\n");
 
-    switch (ans){
-    case 't':
+    if (ans == 'y'){
         choice = 3;
-    default:
+    }else{
         choice = 0;
     }
 
@@ -99,14 +95,13 @@ int page4(){
 
     char ans;
     int choice;
-    printf("\nIs it here? (t/f) ");
-    scanf("%c", &ans);
-    printf("\n")
+    printf("\nIs it here? (y/n) ");
+    scanf(" %c", &ans);
+    printf("\n");
 
-    switch (ans){
-    case 't':
+    if (ans == 'y'){
         choice = 4;
-    default:
+    }else{
         choice = 0;
     }
 
@@ -116,23 +111,23 @@ int page4(){
 void result(sum){
     printf("\n---------------------- Result ----------------------\n");
 
-    if sum == 1{
+    if (sum == 1){
         printf("\nYou have think,\n     Captain America          04\n\n");
-    } else if sum == 2{
+    } else if (sum == 2){
         printf("\nYou have think,\n     Hulk                     07\n\n");
-    } else if sum == 3{
+    } else if (sum == 3){
         printf("\nYou have think,\n     Doctor Strenge           08\n\n");
-    } else if sum == 4{
+    } else if (sum == 4){
         printf("\nYou have think,\n     Iron Man                 01\n\n");
-    } else if sum == 5{
+    } else if (sum == 5){
         printf("\nYou have think,\n     Thor                     10\n\n");
-    } else if sum == 6{
+    } else if (sum == 6){
         printf("\nYou have think,\n     Hawkeye                  05\n\n");
-    } else if sum == 7{
+    } else if (sum == 7){
         printf("\nYou have think,\n     Ant Man                  09\n\n");
-    } else if sum == 8{
+    } else if (sum == 8){
         printf("\nYou have think,\n     Captain Marvel           02\n\n");
-    } else if sum == 9{
+    } else if (sum == 9){
         printf("\nYou have think,\n     Black Widow              06\n\n");
     } else{
         printf("\nYou have think,\n     Spider Man               03\n\n");
@@ -145,10 +140,10 @@ int main()
 {
     show_menu();
     char mind;
-    printf("Did you keep in mind an item? (t/f) ");
-    scanf("%c", &mind);
+    printf("Did you keep in mind an item? (y/n) ");
+    scanf(" %c", &mind);
 
-    if mind == 't'{
+    if (mind == 'y'){
         int ans1, ans2, ans3, ans4;
 
         ans1 = page1();
@@ -158,7 +153,7 @@ int main()
 
         result(ans1 + ans2 + ans3 + ans4);
     }else{
-        printf("Magic book is closing...")
+        printf("Magic book is closing...\n\n");
     }
 
     return 0;
